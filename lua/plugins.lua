@@ -36,6 +36,10 @@ packer.startup({
     -- Packer 可以升级自己
     use("wbthomason/packer.nvim")
     -------------------------- plugins -------------------------------------------
+    -- github copilot
+    use({
+      "github/copilot.vim"
+    })
     -- nvim-tree
     use({
       "kyazdani42/nvim-tree.lua",
@@ -122,6 +126,8 @@ packer.startup({
     use("ful1e5/onedark.nvim")
     -- nightfox
     use("EdenEast/nightfox.nvim")
+    -- sonokai
+    use("sainnhe/sonokai")
 
     -------------------------------------------------------
     use({ "akinsho/toggleterm.nvim" })
