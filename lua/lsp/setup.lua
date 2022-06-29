@@ -11,6 +11,10 @@ local lspconfig = require("lspconfig")
 -- https://github.com/williamboman/nvim-lsp-installer#available-lsps
 local servers = {
   sumneko_lua = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
+  clangd = require("lsp.config.clangd"),
+  gopls = require("lsp.config.go"),
+  jdtls = require("lsp.config.java"),
+  taplo = require("lsp.config.toml"),
   bashls = require("lsp.config.bash"),
   pyright = require("lsp.config.pyright"),
   html = require("lsp.config.html"),
@@ -20,7 +24,7 @@ local servers = {
   tsserver = require("lsp.config.ts"),
   rust_analyzer = require("lsp.config.rust"),
   yamlls = require("lsp.config.yamlls"),
-  -- remark_ls = require("lsp.config.markdown"),
+  remark_ls = require("lsp.config.markdown"),
 }
 
 for name, config in pairs(servers) do
