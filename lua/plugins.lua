@@ -108,6 +108,8 @@ packer.startup({
     use("b0o/schemastore.nvim")
     -- Rust 增强
     use("simrat39/rust-tools.nvim")
+    -- Clang formatter
+    use("rhysd/vim-clang-format")
     --------------------- colorschemes --------------------
     -- tokyonight
     use("folke/tokyonight.nvim")
